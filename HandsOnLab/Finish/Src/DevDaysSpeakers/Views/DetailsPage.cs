@@ -2,8 +2,8 @@
 
 using DevDaysSpeakers.Shared.Models;
 
-using Xamarin.Essentials;
-using Xamarin.Forms;
+//using Xamarin.Essentials;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.Views
 {
@@ -30,7 +30,7 @@ namespace DevDaysSpeakers.Views
 
             var titleLabel = new Label
             {
-                TextColor = Color.Purple,
+                TextColor = Colors.Purple,
                 Text = speaker.Title
             };
 

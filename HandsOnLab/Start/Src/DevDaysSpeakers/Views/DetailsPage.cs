@@ -2,8 +2,8 @@
 
 using DevDaysSpeakers.Shared.Models;
 
-using Xamarin.Essentials;
-using Xamarin.Forms;
+//using Xamarin.Essentials;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.Views
 {

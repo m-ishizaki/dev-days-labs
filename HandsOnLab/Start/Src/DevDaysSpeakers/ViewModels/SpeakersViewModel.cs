@@ -13,7 +13,7 @@ using DevDaysSpeakers.Services;
 
 using Newtonsoft.Json;
 
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.ViewModel
 {

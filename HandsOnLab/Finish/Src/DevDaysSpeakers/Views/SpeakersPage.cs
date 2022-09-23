@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using DevDaysSpeakers.Shared.Models;
 using DevDaysSpeakers.ViewModel;
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.Views
 {
@@ -17,7 +17,7 @@ namespace DevDaysSpeakers.Views
             {
                 IsPullToRefreshEnabled = true,
                 ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-                SeparatorColor = Color.Transparent
+                SeparatorColor = Colors.Transparent
             };
             speakersListView.SetBinding(ListView.ItemsSourceProperty, nameof(SpeakersViewModel.Speakers));
             speakersListView.SetBinding(ListView.RefreshCommandProperty, nameof(SpeakersViewModel.GetSpeakersCommand));

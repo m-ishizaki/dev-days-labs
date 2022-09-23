@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using DevDaysSpeakers.Shared.Models;
 using DevDaysSpeakers.ViewModel;
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.Views
 {
