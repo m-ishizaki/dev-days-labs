@@ -1,5 +1,5 @@
 ﻿using DevDaysSpeakers.Shared.Models;
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.Views
 {

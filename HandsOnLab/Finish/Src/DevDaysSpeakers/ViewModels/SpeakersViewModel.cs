@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using DevDaysSpeakers.Shared.Models;
 using DevDaysSpeakers.Services;
 
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace DevDaysSpeakers.ViewModel
 {
