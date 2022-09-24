@@ -14,12 +14,9 @@ Today we will build a cloud connected [Xamarin.Forms](https://docs.microsoft.com
 
 This solution contains 3 solution folders: Mobile, Common and Backend
 
-**Mobile** contains 4 projects:
+**Mobile** contains 1 projects:
 
-* DevDaysSpeakers  - .NET Standard Project that is used by the Droid, iOS and UWP projects and will have all shared code (model, views, and view models)
-* DevDaysSpeakers.Droid - Xamarin.Android application
-* DevDaysSpeakers.iOS - Xamarin.iOS application (requires a Mac)
-* DevDaysSpeakers.UWP - Windows 10 UWP application (requires Visual Studio on PC)
+* DevDaysSpeakers  - .NET Project that is used by the Droid, iOS and UWP projects and will have all code (model, views, and view models)
 
 **Common** contains 1 project:
 * DevDaysSpeakers.Shared - this is a Shared Project that contains code used by both the Backend and Mobile solutions
@@ -362,7 +359,7 @@ public SpeakersPage()
     {
         IsPullToRefreshEnabled = true,
         ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-        SeparatorColor = Color.Transparent
+        SeparatorColor = Colors.Transparent
     };
 }
 ```
@@ -378,7 +375,7 @@ public SpeakersPage()
     {
         IsPullToRefreshEnabled = true,
         ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-        SeparatorColor = Color.Transparent
+        SeparatorColor = Colors.Transparent
     };
     speakersListView.SetBinding(ListView.ItemsSourceProperty, nameof(SpeakersViewModel.Speakers));
     speakersListView.SetBinding(ListView.RefreshCommandProperty, nameof(SpeakersViewModel.GetSpeakersCommand));
@@ -397,7 +394,7 @@ public SpeakersPage()
     {
         IsPullToRefreshEnabled = true,
         ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-        SeparatorColor = Color.Transparent
+        SeparatorColor = Colors.Transparent
     };
     speakersListView.SetBinding(ListView.ItemsSourceProperty, nameof(SpeakersViewModel.Speakers));
     speakersListView.SetBinding(ListView.RefreshCommandProperty, nameof(SpeakersViewModel.GetSpeakersCommand));
@@ -422,7 +419,7 @@ public SpeakersPage()
     {
         IsPullToRefreshEnabled = true,
         ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-        SeparatorColor = Color.Transparent
+        SeparatorColor = Colors.Transparent
     };
     speakersListView.SetBinding(ListView.ItemsSourceProperty, nameof(SpeakersViewModel.Speakers));
     speakersListView.SetBinding(ListView.RefreshCommandProperty, nameof(SpeakersViewModel.GetSpeakersCommand));
@@ -520,7 +517,7 @@ public SpeakersPage()
     {
         IsPullToRefreshEnabled = true,
         ItemTemplate = new DataTemplate(typeof(SpeakersCell)),
-        SeparatorColor = Color.Transparent
+        SeparatorColor = Colors.Transparent
     };
     speakersListView.SetBinding(ListView.ItemsSourceProperty, nameof(SpeakersViewModel.Speakers));
     speakersListView.SetBinding(ListView.RefreshCommandProperty, nameof(SpeakersViewModel.GetSpeakersCommand));
@@ -577,7 +574,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -615,7 +612,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -664,7 +661,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -722,7 +719,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -783,7 +780,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -850,7 +847,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -920,7 +917,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -994,7 +991,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -1074,7 +1071,7 @@ public class DetailsPage : ContentPage
 
         var titleLabel = new Label
         {
-            TextColor = Color.Purple,
+            TextColor = Colors.Purple,
             Text = speaker.Title
         };
 
@@ -1153,7 +1150,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Kim is a co-organizer for Montreal Mobile .NET Developers",
             Title = "Community Engineer",
             Website = "https://www.linkedin.com/in/kimcodes/",
-            Avatar = "https://pbs.twimg.com/profile_images/1095401068442386433/83JOBFoE_400x400.jpg"
+            Avatar = "https://pbs.twimg.com/profile_images/1450506410404552709/T8TRq11u_400x400.jpg"
         },
         new Speaker
         {
@@ -1161,7 +1158,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Martijn is a Xamarin consultant at Xablu, Xamarin MVP, contributor of MvvmCross, and creator of several Xamarin plugins.",
             Title = "Xamarin Consultant",
             Website = "https://www.xablu.com/",
-            Avatar = "https://pbs.twimg.com/profile_images/696643425706340353/QGsT4xLt_400x400.png",
+            Avatar = "https://pbs.twimg.com/profile_images/1570003529783283712/Y_WgVMAQ_400x400.jpg",
         },
         new Speaker
         {
@@ -1169,7 +1166,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Michael Stonis is a partner at Eight-Bot, a software consultancy in Chicago, where he focuses on mobile and integration solutions for enterprises using .NET. He loves mobile technology and how it has opened up our world in new and interesting ways that seemed like an impossibility just a few years ago. Outside of work, you will probably find him spending time with his family, brewing beer, or playing pinball.",
             Title = "President",
             Website = "https://www.eightbot.com/",
-            Avatar = "https://pbs.twimg.com/profile_images/3544049213/c90b7bfed6c5cbc1067b7d13b4f6f0e6_400x400.png",
+            Avatar = "https://pbs.twimg.com/profile_images/1561829647020695552/i-iQc2NJ_400x400.jpg",
         },
         new Speaker
         {
@@ -1177,7 +1174,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Kasey Uhlenhuth is a program manager on the .NET Managed Languages team at Microsoft. She is currently working on modernizing the C# developer experience, but has also worked on C# scripting and the REPL. Before joining Microsoft, Kasey studied computer science and played varsity lacrosse at Harvard University. In her free time she can be found creating art, reading, or playing volleyball and ultimate frisbee.",
             Title = "Program Manager, .NET Managed Languages",
             Website = "https://microsoft.com/",
-            Avatar = "https://pbs.twimg.com/profile_images/704473408638050304/bVbzez9X_400x400.jpg",
+            Avatar = "https://pbs.twimg.com/profile_images/1144225055821484034/AG94uGBE_400x400.jpg",
         },
         new Speaker
         {
@@ -1185,7 +1182,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Santosh is an Azure MVP, Azure Consultant at NewSignature, President of Orlando Dot Net User Group and organizer of Orlando Code Camp.",
             Title = "Azure Consultant",
             Website = "http://santoshhari.wordpress.com/",
-            Avatar = "https://pbs.twimg.com/profile_images/1108107477017493504/rKaK9ZPO_400x400.png",
+            Avatar = "https://pbs.twimg.com/profile_images/1515077650557149195/ZoR5WdFD_400x400.jpg",
         },
         new Speaker
         {
@@ -1193,7 +1190,7 @@ static List<Speaker> GenerateSpeakers()
             Description = "Ana is a developer at Slack who works on the Windows and Linux application. Previously she was at GitHub where she built the GitHub Desktop application on Windows, as well as the popular Xamarin libraries ReactiveUI, ModernHttpClient, and Akavache.",
             Title = "Engineer",
             Website = "https://slack.com/",
-            Avatar = "https://pbs.twimg.com/profile_images/1119744877825105920/Sv7VY9rm_400x400.png",
+            Avatar = "https://pbs.twimg.com/profile_images/1489102828924817410/V5m0095-_400x400.jpg",
         },
     };
 }
